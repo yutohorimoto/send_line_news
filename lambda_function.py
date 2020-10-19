@@ -61,7 +61,7 @@ def lambda_handler(event, context):
         s3_resource.Object('sendline','news.csv').put(Body=csv_buffer.getvalue())
     
     def send_line(content):
-        access_token = 'ESd98SUX9zAT/37dR8NRG3Si/3AbaDmjru+RawCjmcizNH6d4xHThW+9O/PcSMtQMPuXPa0p6YlTZSOg5Dfosh2WeThMq+uXO9lSlbRjNMRAGnvDQMHV7Qjd26kXBHohTcG2W666GElXsfs4c3UQQQdB04t89/1O/w1cDnyilFU='
+        access_token = ********
         line_bot_api = LineBotApi(access_token)
         line_bot_api.broadcast(TextSendMessage(text=content))
     
